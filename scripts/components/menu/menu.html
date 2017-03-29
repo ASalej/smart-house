@@ -1,0 +1,12 @@
+<div>
+    <logo>
+		<a href="/">
+			<img src="img/smart-home.png">
+		</a>
+	</logo>
+	<ul ng-repeat="item in menuItems">
+    	<li>
+    		<a href="" class="{{ item.isCurrentTab ? 'current-tab' : '' }}">{{ item.itemName }}</a>
+    	</li>
+    </ul>
+</div>

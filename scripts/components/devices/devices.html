@@ -1,0 +1,16 @@
+<div class="devices">
+    <div class="device" ng-repeat="device in vm.devices">
+        <header>
+            <span>{{ device.deviceName }}</span>
+        </header>
+        <div class="functions text">
+            <ul>
+                <li ng-repeat="function in device.functions">
+                    <span class="point"></span>
+                    <span>{{ function }}</span>
+                </li>
+            </ul>
+        </div>
+        <footer class="device-footer"><a href="" class="ui-button">Control Device</a></footer>
+    </div>
+</div>
