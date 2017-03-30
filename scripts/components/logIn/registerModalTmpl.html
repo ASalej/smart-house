@@ -1,0 +1,21 @@
+<div>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title">Register Form</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="modal.close()">x</button>
+        </div>
+        <div class="modal-body">
+            <span class="error-msg" ng-if="errorLogin">{{ errorLoginMessage }}</span>
+            <form>
+                <label for="login">Login:</label>
+                <input id="login" ng-model="user.login" type="text" name="input" required ng-trim="false"/>
+                <label for="password">Password: </label>
+                <input id="password" ng-model="user.password" type="text" name="input" required ng-trim="false"/>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a data-dismiss="modal" href="" class="ui-button" ng-click="modal.close()">Cancel</a>
+            <a class="ui-button" href="" ng-click="setUserData()">Register</a>
+        </div>
+    </div>
+</div>

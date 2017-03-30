@@ -59,3 +59,8 @@ log-in {
 log-in a {
     margin-left: 10px;
 }
+
+.hello-text {
+    color: white;
+    font-family: 'Oswald',Arial,sans-serif;
+}

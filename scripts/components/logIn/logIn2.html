@@ -1,0 +1,10 @@
+<div>
+	<div ng-if="user.isSavedUser">
+		<span class="hello-text">Hello, {{ user.userName }}</span>
+		<a href="" class="ui-button" ng-click="user.logOut()">Log Out</a>
+	</div>
+	<div ng-if="!user.isSavedUser">
+		<a href="" class="ui-button" ng-click="user.register()">Register</a>
+		<a href="" class="ui-button" ng-click=user.logIn()>Log In</a>
+	</div>
+</div>

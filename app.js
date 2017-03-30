@@ -6,7 +6,7 @@ require('./scripts/components/module');
 require('./scripts/pages/module');
 
 angular.module('App', [
-    // 'App.Api',
+    'App.Api',
     'App.Components',
     'App.Pages',
     'ui.router',
